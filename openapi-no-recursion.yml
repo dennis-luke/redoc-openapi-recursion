@@ -31,4 +31,8 @@ definitions:
         type: string
         example: an-id
         description: Description of id.
+      field:
+        type: string
+        example: field-value
+        description: Description of field.
     title: Thing
