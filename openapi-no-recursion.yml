@@ -13,7 +13,11 @@ paths:
         '200':
           description: OK
           schema:
-            $ref: '#/definitions/Thing'
+            properties:
+              id:
+                type: string
+                example: an-id
+                description: Description of id.
         '400':
           description: Error
           schema:
@@ -23,17 +27,3 @@ paths:
                 example: error message
                 description: Explanation of the error
       deprecated: false
-definitions:
-  Thing:
-    type: object
-    properties:
-      id:
-        type: string
-        example: an-id
-        description: Description of id.
-      subthings:
-        type: array
-        description: List of sub-things.
-        items:
-          $ref: '#/definitions/Thing'
-    title: Thing
