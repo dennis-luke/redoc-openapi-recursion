@@ -7,7 +7,7 @@ info:
 paths:
   /v1/things:
     get:
-      summary: Get a tree of things.
+      summary: Get a thing.
       operationId: getThings
       responses:
         '200':
