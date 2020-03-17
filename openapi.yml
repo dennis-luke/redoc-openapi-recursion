@@ -4,6 +4,8 @@ info:
   version: '1'
   description: |
     Example spec for recursion
+produces:
+  - application/json
 paths:
   /v1/things:
     get:
